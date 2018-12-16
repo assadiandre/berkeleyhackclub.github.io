@@ -5,8 +5,11 @@
     <title>Berkeley Hackclub</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src="script.js"></script>
 </head>
-<body id="body">
+<body id="body" onload="init()">
 
     <img src="Icons/logo.png" id="mainImage" />
     <p id="meetingDatesTitle">
@@ -17,8 +20,8 @@
 
     <div class="meetInfo">
           <div class="calendar">
-            <div class="calendar_top"> Dec </div>
-            <p class="calendar_day"> 11 </p>
+            <div class="calendar_top"> ... </div>
+            <p class="calendar_day"> ... </p>
           </div>
           <div class="meetText">
             <p > Next Meeting: </p>
@@ -48,12 +51,12 @@
       <div class="rect" id="announcements">
         <h2 class="boxHeader"> Announcements  </h2>
         <p class="announcementText">
-          The Berkeley Hackclub is proud to announce our first long-term Hackathon! <a class="announcementText" href="https://docs.google.com/forms/d/e/1FAIpQLSfZ7WHUCjRLxBHJc22yGdszVd19r6E-JIK1M_-1TnRgPnaeMw/viewform"> SIGN UP HERE</a>. There will be $300 dollars in prizes and competitions will be split by age group ( Sophomore & Freshmen, Seniors & Juniors ). This event will last from Dec 5 - Dec 19, which is presentation day. Make sure to sign up by the registration deadline by Dec 10th!
+          The Berkeley Hackclub is proud to announce our first long-term Hackathon! <a class="announcementText" href="https://hackclub.com"> SIGN UP HERE </a>. There will be $300 dollars in prizes and competitions will be split by age group ( Sophomore & Freshmen, Seniors & Juniors ). This event will last from Dec 5 - Dec 19, which is presentation day. Judges will be announced soon. Make sure to sign up by the registration deadline by Dec 10th!
         </p>
 
         <h2 class="boxHeader" style="top: 10px;"> More Info  </h2>
         <p class="announcementText">
-          For more info on specifics of the competition go ahead and checkout the <a class="announcementText" href="https://docs.google.com/document/d/1huCXQ0XJOldvVDM8PoGfOcYoB5_-33TQ3hOzE3bVoRI/edit?usp=sharing"> December Hackathon Guidlines</a>.
+          For more info on Judges, specifics of the competition, or anything else go ahead and checkout the <a class="announcementText" href="https://hackclub.com"> December Hackathon Guidlines </a>.
         </p>
       </div>
 
@@ -63,7 +66,7 @@
       <h2 class="boxHeader" > Join Mailist  </h2>
       <form method="POST" action="https://formspree.io/berkeleyhackclub@gmail.com">
         <label class="formText" for="fname">First Name</label>
-        <input type="text" id="name" name="name" placeholder="John">
+        <input type="text" id="name" name="name" placeholder="John Doe">
         <label class="formText" for="lname">Last Name</label>
         <input type="text" id="email" name="email" placeholder="email@example.com">
         <input type="submit" value="Submit">
@@ -82,7 +85,6 @@
         <a href="https://github.com/berkeleyhackclub"> <img src="Icons/github.png" width="30px" >
         <a href="https://hackclub.com/slack_invite/"> <img src="Icons/slack.png" width="30px" >
         <a href="mailto:berkeleyhackclub@gmail.com"> <img src="Icons/mail.png" width="30px" >
-
       </div>
     </center>
 
